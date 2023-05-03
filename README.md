@@ -14,15 +14,18 @@ Após o python istalado você precisa instalar as depedências utilizando o coma
 ```
 python3 -m venv .
 pip install -r requirements.txt
+FLASK_APP=app.py flask db init
+FLASK_APP=app.py flask  db migrate -m "entries table"
+FLASK_APP=app.py flask db upgrade
 ```
 
 ## Routes:
 
-### http://localhost:8080/
+### http://localhost:5000/
 Request:
 
 ```
-curl -v http://localhost:8080/
+curl -v http://localhost:5000/
 ```
 
 Response:

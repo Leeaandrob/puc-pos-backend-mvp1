@@ -3,3 +3,4 @@ bin/
 lib/
 *.cfg
 __pycache__/
+migrations
