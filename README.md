@@ -13,6 +13,7 @@ Após o python istalado você precisa instalar as depedências utilizando o coma
 
 ```
 python3 -m venv .
+source bin/activate
 pip install -r requirements.txt
 FLASK_APP=app.py flask db init
 FLASK_APP=app.py flask  db migrate -m "entries table"
